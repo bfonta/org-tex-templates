@@ -1,0 +1,48 @@
+#+LATEX_HEADER: \special{pdf:minorversion 7} %set minorversion
+
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{xurl}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor={blue!90!black},citecolor={red!70!black},urlcolor={green!60!black}}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{siunitx}
+#+LATEX_HEADER: \usepackage{chemformula}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage{pgffor}
+#+LATEX_HEADER: \usepackage{slashed}
+#+LATEX_HEADER: \usepackage{epigraph}
+#+LATEX_HEADER: \usepackage{graphicx} 
+#+LATEX_HEADER: \usepackage[absolute,overlay]{textpos}
+#+LATEX_HEADER: \usepackage{lipsum}
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{caption}
+#+LATEX_HEADER: \usepackage{multicol}
+#+LATEX_HEADER: \usepackage{multirow}
+#+LATEX_HEADER: \setlength{\columnseprule}{0pt}
+#+LATEX_HEADER: \setlength\columnsep{10pt}
+#+LATEX_HEADER: \label{form}
+
+#+LATEX_HEADER: \usepackage{geometry}
+#+LATEX_HEADER: \geometry{margin=1in}
+
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titleformat*{\section}{\centering\Large\bfseries}
+#+LATEX_HEADER: \titleformat*{\subsection}{\centering\large\bfseries}
+
+#+LATEX_HEADER: \DeclareSIUnit \barn {b}
+#+LATEX_HEADER: \DeclareSIUnit \invfb {\per\femto\barn}
+#+LATEX_HEADER: \newcommand{\spin}[1]{spin-#1}
+
+# Font style
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{tgadventor}
+
+# Turn off page numbering
+#+LATEX_HEADER: \pagenumbering{gobble}
+
+#+OPTIONS: H:4 toc:nil num:nil 
+
+* Title
+\vspace{.8cm}
+
+\lipsum[1-4]
