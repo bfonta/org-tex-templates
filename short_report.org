@@ -1,3 +1,4 @@
+* Preamble :ignore:
 #+LATEX_HEADER: \special{pdf:minorversion 7} %set minorversion
 
 #+LATEX_HEADER: \usepackage{hyperref}
@@ -7,6 +8,7 @@
 #+LATEX_HEADER: \usepackage{siunitx}
 #+LATEX_HEADER: \usepackage{chemformula}
 #+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{upgreek}
 #+LATEX_HEADER: \usepackage{xcolor}
 #+LATEX_HEADER: \usepackage{pgffor}
 #+LATEX_HEADER: \usepackage{slashed}
@@ -22,24 +24,47 @@
 #+LATEX_HEADER: \setlength\columnsep{10pt}
 #+LATEX_HEADER: \label{form}
 
+# Custom commands
+#+LATEX_HEADER: \newcommand{\proc}{$\mathrm{X}\,{\rightarrow}\,\mathrm{HH}\,{\rightarrow}\,\mathrm{bb}\uptau\uptau$}
+
+# Text margins
 #+LATEX_HEADER: \usepackage{geometry}
 #+LATEX_HEADER: \geometry{margin=1in}
 
+# Section naming
 #+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX_HEADER: \titleformat*{\section}{\centering\Large\bfseries}
 #+LATEX_HEADER: \titleformat*{\subsection}{\centering\large\bfseries}
 
+# Units
 #+LATEX_HEADER: \DeclareSIUnit \barn {b}
 #+LATEX_HEADER: \DeclareSIUnit \invfb {\per\femto\barn}
 #+LATEX_HEADER: \newcommand{\spin}[1]{spin-#1}
+
+# References
+#+LATEX_HEADER: \usepackage{cleveref}
+#+LATEX_HEADER: \crefname{figure}{Fig.}{Figs.}
+#+LATEX_HEADER: \Crefname{figure}{Fig.}{Figs.}
+#+LATEX_HEADER: \crefname{equation}{Eq.}{Eqs.}
+#+LATEX_HEADER: \Crefname{equation}{Eq.}{Eqs.}
+#+LATEX_HEADER: \crefname{table}{Table}{Tables}
+#+LATEX_HEADER: \Crefname{table}{Table}{Tables}
+#+LATEX_HEADER: \crefname{section}{Section}{Sections}
+#+LATEX_HEADER: \Crefname{section}{Section}{Sections}
+#+LATEX_HEADER: \crefname{chapter}{Chapter}{Chapters}
+#+LATEX_HEADER: \Crefname{chapter}{Chapter}{Chapters}
+#+LATEX_HEADER: \crefname{appendix}{Appendix}{Appendices}
+#+LATEX_HEADER: \Crefname{appendix}{Appendix}{Appendices}
+#+LATEX_HEADER: \newcommand*{\newcite}{Ref.~\cite}% Prepend \cite with Ref.~
 
 # Font style
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{tgadventor}
 
 # Turn off page numbering
-#+LATEX_HEADER: \pagenumbering{gobble}
+# #+LATEX_HEADER: \pagenumbering{gobble}
 
+# Org options
 #+OPTIONS: H:4 toc:nil num:nil 
 
 * Title
