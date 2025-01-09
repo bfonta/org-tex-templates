@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{allpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{2pt} % No header rule
+	\renewcommand{\footrulewidth}{2pt} % Footer rule thickness
+}
+\pagestyle{allpages}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\ % Date
+\hfill Bruno Alves \\
+\hfill Laboratoire Leprince-Ringuet (LLR) \\
+\hfill École polytechnique \\
+\hfill 91128 Palaiseau \\[.15cm]
+\hfill Email: \textit{bruno.alves@cern.ch} \\
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+	Dr. Maude Le Jeune, Dr. Andrea Sartirana \\
+	Laboratoire Astroparticule \& Cosmologie (APC) \\
+    Bâtiment Condorcet, 10 rue Alice Domon et Léonie Duquet \\
+    75205 Paris
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Dr. Le Jeune, Dr. Sartirana,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+``Expert en calcul scientifique'', with the UMR7164-MAULEJ-006 reference.
+
+\bigskip % Vertical whitespace
+
+Sincerely yours,
+
+\vspace{20pt} % Vertical whitespace
+
+Bruno Alves \\
+
+\end{document}
