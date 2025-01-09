@@ -1,0 +1,67 @@
+* Preamble :ignore:
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+
+#+LATEX_HEADER: \usepackage{geometry}
+#+LATEX_HEADER: \geometry{left=3cm, right=3cm, top=4cm, bottom=2cm}
+
+#+LATEX_HEADER: \setlength{\parindent}{0pt} % Paragraph indentation
+#+LATEX_HEADER: \setlength{\parskip}{1em} % Vertical space between paragraphs
+
+# Font style
+#+LATEX_HEADER: \usepackage{charter}
+
+# Set minorversion
+#+LATEX_HEADER: \special{pdf:minorversion 7}
+
+# Turn off page numbering
+#+LATEX_HEADER: \pagenumbering{gobble}
+
+# Org options
+#+OPTIONS: H:4 toc:nil num:nil 
+
+* Header :ignore:
+\rule{\textwidth}{1pt}
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\
+\hfill Bruno Alves \\
+\hfill Laboratoire Leprince-Ringuet (LLR) \\
+\hfill École polytechnique \\
+\hfill 91128 Palaiseau \\[.15cm]
+\hfill Email: \textit{bruno.alves@XXXX.XX} \\
+\end{tabular}
+
+\bigskip
+\bigskip
+
+\begin{tabular}{@{} l}
+	Dr. XX \\
+	Laboratoire XXX \\
+    XXX \\
+    XXX Paris
+\end{tabular}
+
+\bigskip
+\bigskip
+\bigskip
+
+Dear Dr. XXX,
+
+\bigskip
+
+* Content :ignore:
+
+blablabla
+
+* Valediction :ignore:
+\bigskip
+
+Sincerely yours,
+
+\vspace{20pt}
+
+Bruno Alves \\
+
+\rule{\textwidth}{1pt}
